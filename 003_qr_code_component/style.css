@@ -1,0 +1,55 @@
+/* Reset */
+body, p {
+    margin: unset;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+h1 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+/* Layout */
+.wrapper {
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+/* Typography */
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Components */
+body {
+    background-color: #d5e1ee;
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px 15px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 1px 10px 1px rgba(175, 174, 174, 0.39);
+}
+
+.card-point {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #1f3251;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 25px 0 15px;
+}
+
+.card-description {
+    color: 	#7b879d;
+}
