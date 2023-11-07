@@ -1,0 +1,122 @@
+/* Resets */
+body, p {
+    margin: unset;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+h1 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+ul {
+    margin: unset;
+    padding: unset;
+    list-style-type: none;
+}
+
+/* Typography */
+:root {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Layouts */
+.wrapper {
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+/* Commons */
+.button {
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+}
+
+.button + .button {
+    margin-top: 15px;
+}
+
+.button:hover {
+    color: #1f2f56;
+}
+
+.button_primary {
+    color: #fff;
+    background-color: #3935dd;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 3px rgba(169, 161, 210, 0.549);
+}
+
+.button_primary:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Components */
+body {
+    background-color: #e0e8fe;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.card {
+    color: #7280a7;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contents {
+    padding: 20px;
+}
+
+.contents-title {
+    color: #1f2f56;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.contents-add .section {
+    background-color: #f5f7ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contents-add .section-item:first-child {
+    color: #1f2f56;
+    font-weight: bold;
+}
+
+.contents-add .section-controls {
+    margin-left: auto;
+}
+
+.contents-add .section-controls-btn {
+    color: #3829e0;
+    text-decoration: underline;
+}
+
+.contents-add .section-controls-btn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
