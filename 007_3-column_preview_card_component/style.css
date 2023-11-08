@@ -1,0 +1,101 @@
+/* Resets */
+body, p {
+    margin: unset;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+/* Layout */
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Commons */
+.button {
+    font-size: 10px;
+    display: block;
+    width: fit-content;
+    background-color: #f2f2f2;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #f2f2f2;
+}
+
+.button:hover {
+    color: #f2f2f2 !important;
+    background-color: unset;
+}
+
+/* Typography */
+:root {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Colors */
+.color_orange {
+    color: #fec07a !important;
+    background-color: #e38826 !important;
+}
+.color_blue {
+    color: #6ec4ca !important;
+    background-color: #006970 !important;
+}
+.color_green {
+    color: #448d8c !important;
+    background-color: #004241 !important;
+}
+
+.color_orange .button { color: #e38826; }
+.color_blue .button { color: #006970; }
+.color_green .button { color: #004241; }
+
+/* Designs */
+body {
+    background-color: #f2f2f2;
+}
+
+.grid {
+    margin: 100px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.row {
+    background-color: red;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.col-title {
+    color: #f2f2f2;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 38px;
+}
+
+.col-description {
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* Media Queries */
+
+@media (max-width: 540px) {
+    .grid {
+        display: block;
+    }
+}
