@@ -1,0 +1,142 @@
+/* Resets */
+body, p {
+    margin: unset;
+}
+
+h1, h2 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+/* Layout */
+.wrapper {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+/* Typography */
+:root {
+    font-family: 'Karla', sans-serif;
+}
+
+/* Commons */
+.button {
+    color: #fcffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    background-color: #c0de43;
+    padding: 15px 0;
+    border-radius: 3px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.339);
+}
+
+/* Componenets */
+body {
+    background-color: #e6eff5;
+    padding: 100px 20px 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.2);
+}
+
+.header {
+    padding: 30px;
+}
+
+.header-title {
+    color: #2ab2af;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header-description {
+    color: #b1b9c5;
+    line-height: 1.5;
+}
+
+.header-description.highlight {
+    color: #c0df34;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contents {
+    color: #f9fdff;
+    display: flex;
+}
+
+.section {
+    width: 50%;
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section .section-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section.type_left {
+    background-color: #34b3b0;
+}
+
+.section.type_left .section-description_wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section.type_left .section-description.primary {
+    color: #e8fffd;
+    font-size: 28px;
+}
+
+.section.type_left .section-description:nth-child(2) {
+    color: #62cbc9;
+    font-size: 14px;
+}
+
+.section.type_left .section-description:nth-child(3) {
+    color:#bfeceb;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section.type_left .section-controls {
+    margin-top: auto;
+}
+
+.section.type_right {
+    background-color: #4fbebc;
+}
+
+.section.type_right .section-description {
+    color: #cbe9e7;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+@media ( max-width:640px ) {
+    .contents {
+        display: block;
+    }
+    .section {
+        width: unset;
+    }
+}
