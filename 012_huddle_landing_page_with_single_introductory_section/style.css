@@ -1,0 +1,144 @@
+/* Resets */
+body {
+    margin: unset;
+}
+
+h1, h2 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+/* Layouts */
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Typography */
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Commons */
+.button {
+    color: #7c5ec6;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: block;
+    width: 150px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.416);
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #e882e8;
+}
+
+/* Components */
+body {
+    background-color: #674baf;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 20px;
+}
+
+.header {
+    padding: 30px;
+}
+
+.header-title {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header-logo {
+    max-width: 100%;
+}
+
+.contents {
+    color: #fff;
+    padding: 30px;
+}
+
+.section {
+    display: flex;
+    gap: 30px;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-point {
+    width: 50%;
+}
+
+.section-contents {
+    width: 50%;
+}
+
+.section-description {
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+}
+
+.footer-control {
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.footer-control:hover {
+    color: #ce58db;
+}
+
+/* Media Queries */
+@media ( max-width: 720px ) {
+    .section {
+        display: block;
+    }
+    .section-point {
+        width: unset;
+    }
+    .section-contents {
+        width: unset;
+        text-align: center;
+    }
+    .button {
+        margin: 0 auto;
+    }
+    .footer {
+        justify-content: center;
+    }
+}
